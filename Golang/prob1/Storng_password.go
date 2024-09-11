@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 	"unicode"
 )
 
@@ -37,9 +38,10 @@ func minimumNumber(n int32, password string) int32 {
 	}
 
 	// Function to check if the password contains at least one special character
-	containsSpecialCharacter := func(password string) bool {
+	containsSpecialChar := func(password string) bool {
+		specialChars := "!@#$%^&*()-+"
 		for _, char := range password {
-			if !unicode.IsLetter(char) && !unicode.IsDigit(char) {
+			if strings.ContainsRune(specialChars, char) {
 				return true
 			}
 		}
@@ -66,7 +68,7 @@ func minimumNumber(n int32, password string) int32 {
 	}
 
 	// Check if the password contains at least one special character
-	if !containsSpecialCharacter(password) {
+	if !containsSpecialChar(password) {
 		count++
 	}
 
