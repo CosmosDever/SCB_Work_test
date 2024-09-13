@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/poom/Documents/GitHub/SCB_Work_test/free_lang/prob10'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _min, symObjAddr: 0x0, symBinAddr: 0x100003CAC, symSize: 0x48 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _min, symObjAddr: 0x0, symBinAddr: 0x100003CAC, symSize: 0x48 }
+  - { offsetInCU: 0x77, offset: 0x77, size: 0x8, addend: 0x0, symName: _queensAttack, symObjAddr: 0x48, symBinAddr: 0x100003CF4, symSize: 0x224 }
+  - { offsetInCU: 0xF3, offset: 0xF3, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x26C, symBinAddr: 0x100003F18, symSize: 0x78 }
+...
